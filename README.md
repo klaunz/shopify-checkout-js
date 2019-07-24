@@ -1,10 +1,10 @@
 # Shopify Checkout JS Example
 
-A JavaScript example liquid template for Shopify Checkout page (Shopify Plus only).
+An example JavaScript Liquid template for Shopify Checkout page (Plus only).
 
 ## Objective
 
 - Does not require jQuery as a dependency
-- Improve efficiency
+- Improves efficiency
 - Maintainable code
 - JavaScript ES6
