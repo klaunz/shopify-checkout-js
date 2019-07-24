@@ -7,4 +7,4 @@ A JavaScript example liquid template for Shopify Checkout page (Shopify Plus onl
 - Does not require jQuery as a dependency
 - Improve efficiency
 - Maintainable code
-- JavaScript ES6 Compatible
+- JavaScript ES6
