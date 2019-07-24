@@ -19,13 +19,13 @@ if (window.Shopify) {
   }
 
   /*
-    custom functions here
+    custom checkout
   */
   class custom_checkout extends checkout {
     constructor () {
       super(sidebar, main);
     }
-    customFunction () {
+    example () {
       console.log('ready');
     }
   }
@@ -52,6 +52,6 @@ if (window.Shopify) {
         // checkout step three
     }
     /* global functions */
-    c.customFunction();
+    c.example();
   };
 }
