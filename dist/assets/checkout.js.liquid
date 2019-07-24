@@ -1,0 +1,57 @@
+/* **************************************
+*
+* ShopifyCheckout Script Example
+*
+***************************************** */
+if (window.Shopify) {
+  /* variables */
+  const baseEl = document.querySelector('.checkout__wrapper');
+  const sidebar = baseEl.querySelector('.sidebar[role="complementary"]');
+  const main = baseEl.querySelector('.main[role="main"]');
+
+  /* checkout class constructor */
+  class checkout {
+    constructor (sidebar, main) {
+      this.sidebar = sidebar;
+      this.main = main;
+      this.current_step = window.Shopify.Checkout.step;
+    }
+  }
+
+  /*
+    custom functions here
+  */
+  class custom_checkout extends checkout {
+    constructor () {
+      super(sidebar, main);
+    }
+    customFunction () {
+      console.log('ready');
+    }
+  }
+
+  /**
+  * initalise
+  **/
+  const step = {
+    one: 'contact_information',
+    two: 'shipping_method',
+    three: 'payment_method'
+  };
+  const c = new custom_checkout(sidebar, main);
+
+  window.onload = () => {
+    switch (c.current_step) {
+      case step.one:
+        // checkout step one
+        break;
+      case step.two:
+        // checkout step two
+        break;
+      case step.three:
+        // checkout step three
+    }
+    /* global functions */
+    c.customFunction();
+  };
+}
