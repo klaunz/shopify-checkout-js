@@ -1,6 +1,6 @@
 # Shopify Checkout JS Example
 
-An example JavaScript Liquid template for Shopify Checkout page (Plus only).
+A JavaScript template template for Shopify Checkout page.
 
 ## Objective
 
